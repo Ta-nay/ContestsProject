@@ -1,0 +1,34 @@
+.cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .cards-grid {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .no-contests {
+    text-align: center;
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+  .cards-display {
+    width: 50%;
+    margin: 2rem auto;
+    color: var(--text-color);
+  }
+  

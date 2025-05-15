@@ -1,0 +1,90 @@
+.filter-container {
+    width: 220px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    align-self: flex-start;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .filter-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .filter-btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  /* Platform-specific styles */
+  .filter-btn.leetcode {
+    background-color: #fff8d1;
+    color: #b48b00;
+  }
+  .filter-btn.leetcode.active {
+    background-color: #f4c900;
+    color: #000;
+  }
+  
+  [data-theme='dark'] .filter-btn.leetcode {
+    background-color: #5a4d00;
+    color: #fff8d1;
+  }
+  [data-theme='dark'] .filter-btn.leetcode.active {
+    background-color: #f4c900;
+    color: #000;
+  }
+  
+  .filter-btn.codeforces {
+    background-color: #dbeeff;
+    color: #2266cc;
+  }
+  .filter-btn.codeforces.active {
+    background-color: #2266cc;
+    color: #fff;
+  }
+  
+  [data-theme='dark'] .filter-btn.codeforces {
+    background-color: #003366;
+    color: #dbeeff;
+  }
+  [data-theme='dark'] .filter-btn.codeforces.active {
+    background-color: #3399ff;
+    color: #000;
+  }
+  
+  .filter-btn.codechef {
+    background-color: #ffd5d5;
+    color: #b30000;
+  }
+  .filter-btn.codechef.active {
+    background-color: #b30000;
+    color: #fff;
+  }
+  
+  [data-theme='dark'] .filter-btn.codechef {
+    background-color: #4d0000;
+    color: #ffd5d5;
+  }
+  [data-theme='dark'] .filter-btn.codechef.active {
+    background-color: #ff4d4d;
+    color: #000;
+  }
+  

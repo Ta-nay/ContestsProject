@@ -149,7 +149,11 @@ async function startServer() {
   await server.start();
 
   app.use(bodyParser.json());
-  app.use(cors({ origin: 'http://localhost:3090' }));
+  
+  app.use(cors({
+    origin: 'http://localhost:5173', // or whatever port your frontend runs on
+    credentials: true
+  }));
 
   app.use('/graphql', expressMiddleware(server));
 
